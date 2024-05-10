@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuuUss.uss?fileID=7433441132597879392&amp;guid=4c627eac693efc94abf4853442cb4f4b&amp;type=3#MainMenuuUss" />
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1;">
+        <ui:VisualElement name="Container" class="menu" style="flex-grow: 0;">
+            <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" />
+            <ui:Button text="exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,57 @@
+.panel {
+    background-color: rgb(67, 15, 107);
+    align-items: center;
+}
+
+.menu {
+    background-color: rgb(0, 0, 0);
+    align-items: stretch;
+    width: 571px;
+    height: 315px;
+    left: auto;
+    top: 381px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.unity-button {
+    flex-grow: 0;
+    justify-content: flex-start;
+    width: 534px;
+    height: 134px;
+    position: relative;
+    border-top-width: 15px;
+    border-right-width: 15px;
+    border-bottom-width: 15px;
+    border-left-width: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 11px;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    right: -12px;
+}
+
+.unity-text-element {
+    -unity-font: url("project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#LegacyRuntime");
+    -unity-font-style: bold;
+    font-size: 55px;
+    -unity-text-align: middle-center;
+    color: rgb(62, 19, 93);
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    align-items: stretch;
+}
+
+.unity-button:hover {
+    background-color: rgb(237, 255, 0);
+    scale: 1.1 1.1;
+}
+
+.unity-button:active {
+    background-color: rgb(255, 162, 0);
+}
