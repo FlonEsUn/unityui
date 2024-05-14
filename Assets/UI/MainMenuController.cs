@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class YourClassName : MonoBehaviour 
@@ -24,11 +25,12 @@ public class YourClassName : MonoBehaviour
         quitButton.clicked += OnQuitButtonClicked;
     }
 
- 
+
     private void OnPlayButtonCLicked()
     {
-        gameObject.SetActive(false);
+        SceneManager.LoadSceneAsync(1);
     }
+
 
 
 
