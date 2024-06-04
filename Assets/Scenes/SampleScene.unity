@@ -7601,9 +7601,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093483875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057c412988b4f404182b2d4c9860875f, type: 3}
+  m_Script: {fileID: 11500000, guid: bc538288ffeb43848bc31eb233baccb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amount: 1
+  maxAmount: 2
+  smoothAmount: 6
+  rotationAmount: 8
+  maxRotationAmount: 5
+  smoothRotation: 12
+  rotationX: 1
+  rotationZ: 1
+  rotationY: 1
 --- !u!1001 &1095393090
 PrefabInstance:
   m_ObjectHideFlags: 0

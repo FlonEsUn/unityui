@@ -5,8 +5,8 @@ using UnityEngine;
 public class WeaponSway : MonoBehaviour
 {
     [Header("Position")]
-    public float amount = 0.02f;
-    public float maxAmount = 0.06f;
+    public float amount = 1f;
+    public float maxAmount = 2f;
     public float smoothAmount = 6f;
 
     [Header("Rotation")]
@@ -63,9 +63,13 @@ public class WeaponSway : MonoBehaviour
         float tilty = Mathf.Clamp(InputX * rotationAmount, -maxRotationAmount, maxRotationAmount);
         float tiltx = Mathf.Clamp(InputY * rotationAmount, -maxRotationAmount, maxRotationAmount);
 
-        Quaternion finalRotation = Quaternion.Euler(new Vector3(tilty, tiltx, 0));
+        Quaternion finalRotation = Quaternion.Euler(new Vector3
+            (rotationX ? -tiltx : 0f,
+            rotationY ? tilty : 0f,
+            rotationZ ? tilty : 0f
+            ));
 
-        transform.localRotation = Vector3.Lerp(transform.localPosition, finalPosition + initialPosition, Time.deltaTime * smoothAmount);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, finalRotation * initialRotation, Time.deltaTime * smoothRotation);
 
     }
 }
