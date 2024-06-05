@@ -4236,6 +4236,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5786097810451525583, guid: 260ff1508afea5241b6511d8fbe92201, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1093483877}
+    - targetCorrespondingSourceObject: {fileID: 5786097810451525583, guid: 260ff1508afea5241b6511d8fbe92201, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093483878}
   m_SourcePrefab: {fileID: 100100000, guid: 260ff1508afea5241b6511d8fbe92201, type: 3}
 --- !u!1001 &599749414
 PrefabInstance:
@@ -7619,6 +7622,23 @@ MonoBehaviour:
   rotationX: 1
   rotationZ: 1
   rotationY: 1
+--- !u!114 &1093483878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093483875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897413c23081006479a87fb68797dc2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8312695461389646219, guid: 329567a32df996749b0ac94e04b835bd, type: 3}
+  mainCamera: {fileID: 963194227}
+  spawnBullet: {fileID: 2058902605}
+  shootForce: 100
+  spread: 0
 --- !u!1001 &1095393090
 PrefabInstance:
   m_ObjectHideFlags: 0
